@@ -1,0 +1,10 @@
+
+<button (click)="savePost()">Save post</button>
+<div>
+    <div class="post-item" *ngFor="let item of posts" (click)="showFullDeatails(item.id)">
+        <h1>{{item.title}}</h1>
+        <p>
+            {{item.body}}
+        </p>
+    </div>
+</div>

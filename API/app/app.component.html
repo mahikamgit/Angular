@@ -1,0 +1,49 @@
+<!-- <h1>Welcome to trng part</h1>
+<app-welcome></app-welcome> -->
+<!-- <app-product-list></app-product-list> -->
+
+<!-- 4 to 11 -->
+<!-- <div *ngIf="time>=4 && time<=11">
+    HI , Good morning
+
+</div> -->
+<!-- 12 to 16 -->
+<!-- <div *ngIf="time>=12 && time<=16">
+    Hi , Good afetrenonne
+</div> -->
+<!-- 17 to 21 -->
+
+<!-- <div *ngIf="time>=17 && time<=21">
+    Hi , Good evening
+</div> -->
+
+<!-- 21 to 24 -->
+
+<!-- <div *ngIf="time>=21 && time<=24">
+    Hi, good night
+</div> -->
+
+<!-- <app-comp1></app-comp1>
+<app-comp2></app-comp2> -->
+
+<div class="container">
+    <div class="sidebar">
+        <div class="nav-item" (click)="gotoUsersPage()">
+            <span>Users</span>
+        </div>
+        <div class="nav-item" (click)="gotoAdminPage()">
+            <span>Admin</span>
+        </div>
+        <div class="nav-item" (click)="gotoMyProducts()">
+            <span>MyProducts</span>
+        </div>
+    </div>
+
+    <div>
+        <button (click)="goToPosts()">Show posts</button>
+    </div>
+    <div class="main">
+        <router-outlet></router-outlet>
+    </div>
+</div>
+

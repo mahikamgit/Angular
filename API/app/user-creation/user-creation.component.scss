@@ -1,0 +1,23 @@
+.form-container{
+    background-color: gray;
+    box-shadow: 2px 2px red;
+
+}
+
+.form-control-block{
+    border-bottom: 1px solid white;
+    padding: 10px;
+    margin: 10px;
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 2fr 10fr;
+}
+.add-user{
+    background-color: red;
+    padding: 10px;
+    color: white;
+    border: 2px solid #fff;
+}
+.error{
+    color: red;
+}

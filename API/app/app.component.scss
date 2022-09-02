@@ -1,0 +1,22 @@
+.container{
+    display: flex;
+
+}
+.sidebar{
+    width: 10%;
+    height: 100vh;
+    background-color: gray;
+}
+.main{
+    width: 90%;
+    height: 100vh;
+    background-color: green;
+}
+.nav-item{
+    background-color: aqua;
+    border: 1px solid red;
+    margin: 2px;
+}
+.nav-item span{
+    padding: 10px;
+}

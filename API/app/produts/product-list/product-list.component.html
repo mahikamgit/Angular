@@ -1,0 +1,24 @@
+
+<div>
+    <div class="button-block">
+        <button><=15000</button>
+        <button>>=15000</button>
+
+    </div>
+    <ng-container *ngFor="let item of products">
+        <div  class="product-item" [ngClass]="{'product-item-avlable':item.isAvilable == true, 'product-item-unavilable':item.isAvilable == false}" (click)="slecetdProduct(item)">
+            <h1>{{item.name}}</h1>
+            <span>{{item.cost}}</span>
+            <span [ngStyle]="{color:item.isAvilable?'yellow':'blue'}">Done</span>
+        </div>
+    </ng-container>
+    
+</div>
+
+
+<button (click)="addProduct()">Add Product</button>
+
+<h1 *ngIf="isVisted">is product info is visted</h1>
+<app-product-info [productInfo]="selectedProductInfo" (isVistedStaus)="chnageStaus($event)"></app-product-info>
+
+

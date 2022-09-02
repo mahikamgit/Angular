@@ -1,0 +1,23 @@
+<div class="welcome-block">
+    <span>Welcome to PRdocut managemnet Portal</span>
+</div>
+<app-welcome-red></app-welcome-red>
+
+<h1>{{userName}}</h1>
+<button (click)="changeUSerName()">Chaneg username</button>
+
+
+<button (click)="showMorning()">Show Morning Image</button>
+<button (click)="showEveining()">Show Evening Image</button>
+
+<img [src]="imageUrl">
+<div class="data-filed"> 
+    <label>Mobile Number</label>
+    <input type="text" [(ngModel)]="mobilenumber">
+
+</div>
+<h1>{{mobilenumber}}</h1>
+
+
+<button (click)="showData()">Show Data</button>
+<button (click)="updateData()">update Data</button>
